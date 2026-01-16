@@ -23,5 +23,5 @@ int main(){
         variable += inc;     // Update number value
         puts(" ");           // Move to next line
     }
-    return 0;               // Program ends
+    return 0;               
 }
