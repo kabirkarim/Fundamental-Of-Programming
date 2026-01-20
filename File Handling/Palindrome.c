@@ -12,13 +12,13 @@ int main() {
     fscanf(fp, "%s", word); // Read word from file
     fclose(fp);
    
-    for(int i = 0; word[i] != '\0'; i++) { 
+    for(int i = 0; word[i] != '\0'; i++) { //For case Sensative
         if(word[i] >= 'a' && word[i] <= 'z')
             word[i] = word[i] - 32;
     }
     len=strlen(word);
     for (i = 0; word[i] != '\0'; i++) {
-        if (word[i] != word[len - i - 1]) {
+        if (word[i] != word[len - i - 1]) {     // For Cheacking Palindrome 
             printf("'%s' is NOT a Palindrome\n", word);
             return 0;
         }
